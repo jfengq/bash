@@ -1,0 +1,33 @@
+#!/bin/bash
+
+source ~/.git-completion.bash
+
+alias sbrc='source ~/.bashrc'
+alias ls='ls -G'
+
+alias gcge='git config --global -e'
+alias g='git'
+alias ga='git add'
+alias gaa='git add -A'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gcom='git checkout master'
+alias gf='git fetch'
+alias grom='git rebase origin/master'
+alias gpom='git push origin HEAD:refs/for/master'
+alias glg='git lg'
+alias gd='git d'
+alias gst='git st'
+alias gca='git ca'
+alias grs='git reset --soft'
+alias grh='git reset --hard'
+alias gpot='git pot'
+alias gh='git --help'
+alias gs='git s'
+alias gsp='git stash pop'
+alias gsa='git stash apply'
+alias l.='ls -d .* --color=auto'
+alias p1='cd ..'
+alias p2='cd ../..'
+alias p3='cd ../../..'
