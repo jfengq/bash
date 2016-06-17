@@ -1,0 +1,44 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: /Users/quanjiafeng/workspace/vagrant/Code
+      to: /home/vagrant/Code
+
+sites:
+    - map: homestead.app
+      to: /home/vagranit/Code/Laravel/public
+    - map: ci.5miao.com
+      to: /home/vagrant/Code/CodeIgniter/
+    - map: test.php.com
+      to: /home/vagrant/Code/test/
+    - map: test.yuwan8.com
+      to: /home/vagrant/Code/www.yuwan8.com-153/
+    - map: sdk.pkwan.com
+      to: /home/vagrant/Code/sdk.pkwan.com/
+    - map: boss.sdk.pkwan.com
+      to: /home/vagrant/Code/boss.sdk.pkwan.com
+
+databases:
+    - homestead
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
