@@ -1,38 +1,50 @@
 //获得最近的软件包的列表
+
 sudo apt-get update 
 
 //安装Nginx服务器
+
 sudo apt-get install nginx 
 
 //安装php5
+
 sudo apt-get install php5-fpm 
 
 //安装php5在命令行运行的接口
+
 sudo apt-get install php5-cli 
 
 //安装php5加密拓展库
+
 sudo apt-get install php5-mcrypt 
 
 //安装php的MySQL驱动
+
 sudo apt-get install php5-mysql 
 
 //安装MySQL
+
 sudo apt-get install mysql-server
 
 //安装git神器
+
 sudo apt-get install git 
 
 //修改php配置文件
+
 sudo vim /etc/php5/fpm/php.ini
 cgi.fix_pathinfo=0
 
 //使用 php5enmod 启用 MCrypt 扩展
+
 sudo php5enmod mcrypt
 
 //重启 php5-fpm 服务
+
 sudo service php5-fpm restart
 
 //nginx配置
+```
 server {
     listen 80 default_server;
     listen [::]:80 default_server ipv6only=on;
@@ -60,8 +72,11 @@ server {
         include fastcgi_params;
     }
 }
+```
+
 
 //重启 nginx 服务
+
 sudo service nginx restart
 
 
