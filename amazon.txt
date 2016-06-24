@@ -1,2 +1,3 @@
 ip:54.186.110.51
 
+ssh -i workspace/github/bash/amazon.pem ubuntu@ec2-54-186-110-51.us-west-2.compute.amazonaws.com
