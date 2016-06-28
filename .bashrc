@@ -37,4 +37,11 @@ alias l.='ls -d .* --color=auto'
 alias p1='cd ..'
 alias p2='cd ../..'
 alias p3='cd ../../..'
-alias test='test'
+
+
+alias cp='cp -iv'                           # Preferred 'cp' implementation
+alias mv='mv -iv'                           # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
+alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+
+
