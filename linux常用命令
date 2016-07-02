@@ -1,0 +1,12 @@
+修改ssh端口
+vim  /etc/ssh/sshd_config
+改完之后重启
+#centos
+/etc/init.d/sshd restart
+#debian或者ubuntu
+/etc/init.d/ssh restart
+
+
+
+修改密码
+passwd
